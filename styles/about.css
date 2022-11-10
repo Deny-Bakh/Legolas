@@ -1,0 +1,108 @@
+div {
+  display: inline-block;
+}
+
+.button1 {
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 5px -5px darkgrey;
+  background-color: grey;
+  color: aliceblue;
+  padding: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  /* animation: square 1s ease-in-out 0 infinite alternate both;
+    animation-play-state: running; */
+  animation-name: square;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-delay: 0s;
+  animation-fill-mode: none;
+}
+
+@keyframes square {
+  0% {
+    border-radius: 10%;
+    background-color: grey;
+  }
+
+  50% {
+    border-radius: 30%;
+    background-color: pink;
+  }
+
+  100% {
+    border-radius: 10%;
+    background-color: grey;
+  }
+}
+
+.button1:hover {
+  position: relative;
+  border: 5px solid black;
+  background-color: grey;
+  box-shadow: 10px -10px red;
+  transition: all 0.5s ease-in-out 0s, padding 5s ease-out 0s;
+}
+
+.button2 {
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 5px -5px darkgrey;
+  background-color: grey;
+  padding: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  animation-name: butt;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-delay: 0s;
+  animation-fill-mode: none;
+}
+
+@keyframes butt {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 0.5%;
+  }
+}
+
+.button3 {
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 5px -5px darkgrey;
+    background-color: grey;
+    color: aliceblue;
+    padding: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+}
+
+.button3:hover{
+    box-shadow: 10px -10px darkgrey;
+    background-color: red;
+    transition:all 2s ease-in-out;
+    /* animation: circle 1s ease-in-out linear infinite alternate 0 none; */
+}
+
+@keyframes circle{
+    0%{
+        background-color: darkgrey;
+    }
+    100%{
+        background: red;
+    }
+}
