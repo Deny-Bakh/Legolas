@@ -1,0 +1,91 @@
+.button1 {
+    border: 3px solid green;
+    border-radius: 10px;
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: yellow;
+    color: green;
+    animation: square 2s ease-in-out 0s infinite alternate none;
+}
+
+@keyframes square {
+    0%{
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    50%{
+        border-radius: 50px;
+        font-size: 20px;
+    }
+    100%{
+        border-radius: 10px;
+        font-size: 12px;
+    }
+}
+
+.button2 {
+    border: 3px solid green;
+    border-radius: 10px;
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: yellow;
+    color: green;
+}
+
+.button2:hover{ 
+    animation: square 2s ease-in-out 0s infinite alternate none;
+}
+
+@keyframes square {
+    0%{
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    50%{
+        border-radius: 50px;
+        font-size: 20px;
+    }
+    100%{
+        border-radius: 10px;
+        font-size: 14px;
+    }
+}
+
+.button3 {
+    border: 3px solid green;
+    border-radius: 10px;
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: yellow;
+    color: green;
+    animation: canvas 2s ease-in-out 0s infinite alternate none;
+}
+
+@keyframes canvas{
+    0%{
+        background-color: yellow;
+        color: green;
+    }
+    25%{
+        background-color: green;
+        color: yellow;
+    }
+    50%{
+        background-color: yellowgreen;
+        color: brown;
+    }
+    75%{
+        background-color: aquamarine;
+        color: plum;
+    }
+    100%{
+        border-color: yellow;
+        color: green;
+    }
+}

@@ -1,0 +1,88 @@
+.button1 {
+    border: 5px solid purple;
+    border-radius: 5px;
+    box-shadow: -5px -5px pink;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: purple;
+    background-color: pink;
+    font-weight: 700;
+}
+
+.button1:hover{
+    /* box-shadow: 5px 5px purple; */
+    /* transition: all 1.5s ease-in-out; */
+    animation: square 3s linear infinite normal running 0s none;
+}
+
+@keyframes square{
+    0%{
+        box-shadow: -5px -5px pink;
+    }
+    25%{
+        box-shadow: -5px 5px purple;
+    }
+    50%{
+        box-shadow: 5px 5px pink;
+    }
+    75%{
+        box-shadow: 5px -5px purple;
+    }
+    100%{
+        box-shadow: -5px -5px pink;
+    }
+    
+}
+
+.button2 {
+    border: 5px solid purple;
+    border-radius: 50%;
+    /* box-shadow: -5px -5px pink; */
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: purple;
+    background-color: pink;
+    font-weight: 700;
+}
+
+.button2:hover{
+    color: #333;
+    background-color: #fff;
+    border: 1px solid black;
+    box-shadow: -5px 5px grey;
+    transition: background-color 2s ease-in-out 0s, color 1s ease-in 0s, border 1s ease-out 0s, 
+    box-shadow 1s ease-in-out 0s;
+}
+
+.button3 {
+    border: 5px solid purple;
+    border-radius: 5px;
+    box-shadow: -5px -5px pink;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: purple;
+    background-color: pink;
+    font-weight: 700;
+    animation: square 3s linear infinite normal running 0s none;
+}
+
+@keyframes square{
+    0%{
+        box-shadow: -5px -5px pink;
+    }
+    25%{
+        box-shadow: -5px 5px purple;
+    }
+    50%{
+        box-shadow: 5px 5px pink;
+    }
+    75%{
+        box-shadow: 5px -5px purple;
+    }
+    100%{
+        box-shadow: -5px -5px pink;
+    }
+}

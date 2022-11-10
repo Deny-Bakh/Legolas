@@ -1,0 +1,93 @@
+/* 1rem - одиниця вимірювання, яка бере за основу розмір font-size html тегу. 
+Якщо його немає, то його задана величина 16px.
+1em - бере розмір найближчого батьківського елементу в якого є заданий font-size
+В макс відс за допомогою функції calc (), можна задавати сталі величини і додавати до цього певні відступи. */
+
+.button1 {
+  border: 3px solid black;
+  box-shadow: 0 7px 0 aqua;
+  border-radius: 5px;
+  padding: 5px 5px;
+  background-color: aquamarine;
+  color: blueviolet;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button1:hover {
+  box-shadow: 0 3px 0 #3c354a;
+  background-color: #5e5373;
+  color: blue;
+  transition: all 1s ease-in-out;
+  padding: 5px 10px;
+}
+
+/* .button2 {
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 5px 0 goldenrod;
+    padding: 5px 5px;
+    background-color: red;
+    color: aqua;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+} */
+
+.button2 {
+    top: 0;
+  border: 2px solid black;
+  box-shadow: 0 5px 0 aqua;
+  border-radius: 5px;
+  padding: 5px 5px;
+  background-color: aquamarine;
+  color: blueviolet;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.button2:hover{
+    top: 2px;
+    border: 2px solid black;
+    box-shadow: 0 3px 0 aqua;
+    transition: all 0.5s ease-in-out;
+}
+
+.button3 {
+  font-weight: 700;
+  border: 1px solid black;
+  padding: 7px 7px;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 3px 0 #3c354a;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  /* animation-name: square;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running; */
+  /* animation: square 1s linear infinite alternate-reverse running; */
+}
+
+.button3:hover {
+  border: 3px solid black;
+  background-color: #fff;
+  color: brown;
+  transition: all 1s ease-in-out;
+  animation: square 1s linear infinite alternate running;
+}
+
+@keyframes square {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 1%;
+  }
+}
